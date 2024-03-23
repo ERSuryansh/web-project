@@ -1,0 +1,142 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+body {
+    background-color: #e0dfdf;
+    color: rgba(47, 47, 47, 0.598);
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    margin: 0 0; /* Adjusted margin for smaller screens */
+}
+
+main>section :hover{
+    /* font-size: 1.1rem; */
+    
+    color: rgb(28, 19, 59);
+}
+
+nav {
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background-color: rgb(27, 35, 34);
+    color: aliceblue;
+    
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul li {
+    margin: 4px 4px; 
+    /* display: flex; */
+    
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: rgb(214, 182, 241);
+}
+
+h2, h3, h4, h5 {
+    color: rgb(60, 59, 59);
+}
+
+.left {
+    font-size: 2rem; /* Adjusted font size for smaller screens */
+    font-weight: bold;
+}
+
+.firstsection,
+.secondsection,
+.thirdsection,
+.forthsection,
+.fifthsection,
+.sixthsection {
+    margin: 12px 5%; /* Adjusted margin for smaller screens */
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.firstsection {
+    display: flex;
+    flex-direction: row; /* Adjusted flex direction for smaller screens */
+    align-items: center;
+}
+
+.rightsection img {
+    max-width: 50%; /* Ensure image is responsive */
+}
+
+.skill-box {
+    display: inline-block;
+    background-color: #f0f0f0;
+    padding: 8px 12px;
+    margin: 4px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: rgb(27, 35, 34);
+    color: white;
+    padding: 1%;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to new line on smaller screens */
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer>div {
+    width: 150px;
+    margin: 10px 0; /* Adjusted margin for smaller screens */
+}
+
+.footer-rights {
+    text-align: center;
+    color: gray;
+    padding: 12px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    color: rgb(135, 135, 244);
+    font-size: 1.05rem;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .left {
+        font-size: 1.5rem; /* Adjusted font size for smaller screens */
+    }
+
+    .footer>div {
+        width: 100%; /* Full width for smaller screens */
+    }
+
+}
